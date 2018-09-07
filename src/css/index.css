@@ -1,0 +1,14 @@
+body{
+    background-color: darkgreen;
+    color: red;
+}
+#div_three{
+    background-image: url("../images/ff7.jpg");
+    width: 500px;
+    height: 500px;
+    transform: rotate(45deg);
+}
+/*这个css在安装自动检测未使用css时会不打包*/
+.nothing{
+    color: darkgreen;
+}

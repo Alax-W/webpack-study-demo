@@ -1,0 +1,26 @@
+   1.必须安装node.js. 这个就不用多说了，什么安装，网站搜下。
+
+   2.使用的是webpack3.6.0。各种版本信息见package.json。
+     目录结构是：
+     dist：webpack打包后放这里
+     src：自己开发的放这里
+     使用:
+     根目录下运行命令：npm install
+
+   3.最好使用淘宝镜像，cnpm。什么安装自己网上查。npm 有时太慢，有时又安装不成功。
+
+   4.下面为 npm run dev 和npm run build的说面
+    //开发时用npm run dev打包 设置type为dev值
+    "dev": "set type=dev&./node_modules/.bin/webpack",
+    //mac下时把set换成export和使用两个&&
+    //上线打包时时用npm run build 设置type为build值
+    "build": "set type=build&./node_modules/.bin/webpack"
+    //mac下时把set换成export和使用两个&&
+    //type的值（即process.env.type的值）用于webpack.config.js的if判断使用
+
+    5.这个demo是看别人的教程自己练习写的。我可能在下载安装忽略了 --save 有些没有写进webpackage.json中，只是可能。
+
+     6.哪里写的不对的地方。欢迎指正，一起学习。
+
+
+     7。求各位大神，慢点更新，人生困苦，学不懂了（此处应该又个表情包）。

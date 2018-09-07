@@ -1,0 +1,6 @@
+{
+  //使用babel-preset-es2015的写法
+  //"presets":["react","es2015"]
+  //使用babel-preset-env的写法
+  "presets":["react","env"]
+}
